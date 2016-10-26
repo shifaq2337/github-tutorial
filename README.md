@@ -39,5 +39,9 @@ SSH Key
 * `git add` is used to add (edited or new) file(s) to the stage to be committed. Correct syntax : `git add filename`  
 * `git commit -m "relevant/specific message"` is used to save a screenshot of the code that was modified in a file and added to the stage. A relevant and clear message is useful to know what changes you made, in case you want to refer back to the specific code later on (the message should be in present-tense). Correct syntax : `git commit -m "relevant/specific message"`    
 * `git push` is used to upload commits made in the local repository to the remote repository. Correct syntax : After, doing `git push -u origin master` in one repository just typing in `git push` works in that repository.
+* `git init` is used to intialize git inside of the repository
+* `rm -rf .git` uninitializes git and forces to remove a directory
+* `git diff` this checks the file differences between the current and previous commit
+* `git log` this shows the previous commands in detail. It can show the date and message of when you committed the change
 
 
