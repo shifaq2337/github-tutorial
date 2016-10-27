@@ -35,7 +35,7 @@ SSH Key
 
 ---
 ## Workflow & Commands
-* `git status` is used to since the last commit made which files have been edited. Correct syntax : `git status` 
+* `git status` is used to see since the last commit made, which files have been edited (filenames that appear Red tells you that git detected that you edited a file and did not add the file to the stage to commit and the filename appears green if it was added to the stage). Correct syntax : `git status` 
 * `git add` is used to add (edited or new) file(s) to the stage to be committed. Correct syntax : `git add filename`  
 * `git commit -m "relevant/specific message"` is used to save a screenshot of the code that was modified in a file and added to the stage. A relevant and clear message is useful to know what changes you made, in case you want to refer back to the specific code later on (the message should be in present-tense). Correct syntax : `git commit -m "relevant/specific message"`    
 * `git push` is used to upload commits made in the local repository to the remote repository. Correct syntax : After, doing `git push -u origin master` in one repository just typing in `git push` works in that repository.
