@@ -19,8 +19,8 @@ The difference between git and GitHub is that git is the version control and Git
 7. After signing into cloud9, press the gear icon on the top-right, then press the Connected Service button. You will see Github listed, and right next to that you will see the green button Connect, press Connect (to connect GitHub and cloud9).  
 
 SSH Key  
-1. Go to GitHub, on the top-right click on the profile icon then settings.
-2. Next, on the left-sidebar click on SSH and GPG Keys. Then, click on New SSH key to make a new SSH key. 
+1. Go to GitHub, on the top-right click on the profile icon then settings.  
+2. Next, on the left-sidebar click on SSH and GPG Keys. Then, click on New SSH key to make a new SSH key.   
 3. Put cloud9 as the title. Then, go to cloud9, press the gear icon, press the SSH keys tab, copy(from cloud9) and paste the SSH key in GitHub and add the SSH key.
 
 ---
