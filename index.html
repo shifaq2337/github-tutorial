@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>GitHub-tutorial by shifaq2337</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>GitHub-tutorial</h1>
+        <h2></h2>
+        <a href="https://github.com/shifaq2337/github-tutorial" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<h5>
+<a id="by-shifa-quddus" class="anchor" href="#by-shifa-quddus" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>by Shifa Quddus</em>
+</h5>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p>Git is the version control, git commands are used to take screenshots of code. This does not require GitHub and it runs in the command line.<br>
+GitHub is used to store the screenshots from local repositories into the cloud. This requires Git.<br>
+The difference between git and GitHub is that git is the version control and GitHub is the place where the commits made using git in a local repository is saved. </p>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<ol>
+<li>Go to the <a href="https://github.com">GitHub</a> website.</li>
+<li>Click the sign up button.</li>
+<li>Type a username and password you can remember.</li>
+<li>Click the Free Account plan.</li>
+<li>After you are done, check your email and verify with Github (by clicking on the link sent in the email).</li>
+<li>Go to c9.io and sign in to cloud9 using your Github account.</li>
+<li>After signing into cloud9, press the gear icon on the top-right, then press the Connected Service button. You will see Github listed, and right next to that you will see the green button Connect, press Connect (to connect GitHub and cloud9).<br>
+</li>
+</ol>
+
+<p>SSH Key<br>
+1. Go to GitHub, on the top-right click on the profile icon then settings.<br>
+2. Next, on the left-sidebar click on SSH and GPG Keys. Then, click on New SSH key to make a new SSH key.<br>
+3. Put cloud9 as the title. Then, go to cloud9, press the gear icon, press the SSH keys tab, copy(from cloud9) and paste the SSH key in GitHub and add the SSH key.</p>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<ol>
+<li>Create a folder or repository by using either the command line (<code>mkdir foldername</code>) or by clicking on the left-sidebar and then clicking New Folder. </li>
+<li>After creating the folder change from workspace to the new folder (<code>cd foldername</code> into the folder). </li>
+<li>Then, initialize git in the new repository by typing the command <code>git init foldername</code>. Go ahead and make a README file in the folder by typing the command <code>touch README.md</code>. </li>
+<li>Now, open the <code>README.md</code> file (by clicking on it or by typing <code>c9 README.md</code> in the command line), type something, and save the file. </li>
+<li>Then, type <code>git status</code> just to make sure git realizes that you made changes in a file. Type <code>git add README.md</code> to add the file to the stage and then type <code>git commit -m "message that tells you in present tense what changes you made"</code>.</li>
+<li>Now, you have to set a remote repository on GitHub before pushing your commits to GitHub. Go to GitHub, on the top-right press the + button and press the New Repository button. Name the repository on GitHub the same name as the repository on cloud9 and create the repository. Make sure to click SSH, copy and paste into cloud9 the one that says <code>git remote add origin git@github.com : yourgithubusername/repo-name.git</code>. Then, copy and paste into cloud9 : <code>git push -u origin master</code>. </li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ul>
+<li>
+<code>git status</code> is used to see since the last commit made, which files have been edited (filenames that appear Red tells you that git detected that you edited a file and did not add the file to the stage to commit and the filename appears green if it was added to the stage). Correct syntax : <code>git status</code> </li>
+<li>
+<code>git add</code> is used to add (edited or new) file(s) to the stage to be committed. Correct syntax : <code>git add filename</code><br>
+</li>
+<li>
+<code>git commit -m "relevant/specific message"</code> is used to save a screenshot of the code that was modified in a file and added to the stage. A relevant and clear message is useful to know what changes you made, in case you want to refer back to the specific code later on (the message should be in present-tense). Correct syntax : <code>git commit -m "relevant/specific message"</code><br>
+</li>
+<li>
+<code>git push</code> is used to upload commits made in the local repository to the remote repository. Correct syntax : After, doing <code>git push -u origin master</code> in one repository just typing in <code>git push</code> works in that repository.</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/shifaq2337/github-tutorial/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/shifaq2337/github-tutorial/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/shifaq2337/github-tutorial"></a> is maintained by <a href="https://github.com/shifaq2337">shifaq2337</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
